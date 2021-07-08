@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Program | Movie Festival</title>
+</head>
+<body>
+  
+  <h1>Movie Festival</h1>
+
+  <!-- MAIN SECTION -->
+  <main class="container">
+
+    <h3>Please fill the form</h3>
+
+     <!-- MOVIE FORM SECTION -->
+    <h4>Movie</h4>
+    <article class="genre">
+
+      <form>
+        <label for="title">
+          Title:<br>
+          <input type="text" name="title" id="title" placeholder="Title"><br>
+        </label>
+        <label for="lenght">
+          Lenght (min):<br>
+          <input type="email" name="lenght" id="lenght" placeholder="Lenght"><br>
+        </label>
+        <select name="genre_select" id="genre_select">
+          <option value="">-</option>
+          <option value="Drama">Drama</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Action">Action</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Horor">Horor</option>
+        </select><br>
+      </form>
+      <button id="genre_select_btn">Create Movie</button>
+
+      <p id="genre_err"></p>
+      <ul id="genre_list">
+
+      </ul>
+
+    </article>
+
+    <!-- CREATE PROGRAM FORM SECTION -->
+    <h4>Program</h4>
+    <article class="genre">
+      <form>
+        <label for="date">
+          Date:<br>
+          <input type="date" name="date" id="date"><br>
+        </label>
+        
+      </form>
+      <button id="program_select_btn">Create Program</button>
+
+      <p id="program_err"></p>
+      <ul id="program_list">
+
+      </ul>
+
+      <hr>
+
+      <!-- ADD MOVIE TO PROGRAM SECTION -->
+      <h4>Movie</h4>
+      <form>
+        <label for="movie_select">
+          Movie:<br>
+          <select name="movie_select" id="movie_select">
+            <option value = "">-</option>
+          </select><br>
+        </label>
+
+        <label for="program_select">
+          Program:<br>
+          <select name="program_select" id="program_select">
+            <option value = "">-</option>
+          </select><br>
+        </label>
+        
+      </form>
+      <button id="add_movie_btn">Add Movie To Program</button>
+
+      <p id="movie_err"></p>
+      <ul id="movie_list">
+
+      </ul>
+
+    </article>
+
+
+  </main>
+
+
+  <script src="class/movie.class.js"></script>
+  <script src="handlers/function.js"></script>
+</body>
+</html>
